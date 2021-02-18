@@ -8,7 +8,7 @@ idle-vue [![Build Status](https://travis-ci.org/soixantecircuits/idle-vue.svg?br
 :earth_africa: Installation
 ---------------------------
 
-    npm install --save idle-vue
+    npm install --save idle-vue-clone
 
 :wave: Usage
 ------------
@@ -17,7 +17,7 @@ At the root of your project, just before creating your Vue application, import t
 
 ``` js
 import Vue from 'vue'
-import IdleVue from 'idle-vue'
+import IdleVue from 'idle-vue-clone'
 
 const options = { ... }
 
@@ -42,7 +42,7 @@ These hooks are not methods; they should be added directly at the Root of your c
 
 ``` js
 import Vue from 'vue'
-import IdleVue from 'idle-vue'
+import IdleVue from 'idle-vue-clone'
 
 const eventsHub = new Vue()
 
@@ -89,7 +89,7 @@ Note that using `isAppIdle` or using the hooks `onIdle` and `onActive` are both 
 
 ``` js
 import Vue from 'vue'
-import IdleVue from 'idle-vue'
+import IdleVue from 'idle-vue-clone'
 import Vuex from 'vuex'
 
 const store = new Vuex.Store({
@@ -130,7 +130,7 @@ This component is a default idle overlay with a small "touch the screen" sprite;
 #### Example - `main.js`
 
 ``` js
-import IdleVue from 'idle-vue'
+import IdleVue from 'idle-vue-clone'
 import IdleVueComponent from 'idle-vue/src/components/Idle.vue'
 import Vuex from 'vuex'
 
@@ -165,7 +165,7 @@ const vm = new Vue({
 
 ``` javascript
 import Vue from 'vue'
-import IdleVue from 'idle-vue'
+import IdleVue from 'idle-vue-clone'
 const eventsHub = new Vue()
 export default async ( { Vue, store } ) => {
   let idleTime = store.state.settings.idleTime

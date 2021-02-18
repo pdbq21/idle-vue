@@ -1,9 +1,12 @@
 {
-  "name": "idle-vue-clone",
-  "version": "2.0.5",
+  "name": "@pdbq21/idle-vue-clone",
+  "version": "2.1.0",
   "description": "Vue component wrapper for idle-js",
-  "repository": "https://github.com/soixantecircuits/idle-vue.git",
-  "author": "Olivier FAURE <olivier.faure@epitech.eu>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdbq21/idle-vue-clone.git"
+  },
+  "author": "pdbq21",
   "license": "MIT",
   "main": "dist/build.js",
   "scripts": {
@@ -65,5 +68,9 @@
   "engines": {
     "node": ">= 8.0.0",
     "npm": ">= 3.0.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/pdbq21/idle-vue-clone/issues"
+  },
+  "homepage": "https://github.com/pdbq21/idle-vue-clone#readme"
 }
