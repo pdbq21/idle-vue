@@ -1,5 +1,5 @@
 <template>
-  <div class="idle-view" :class="{isIdle: isIdle}">
+  <div class="idle-view" :class="{isIdle: isAppIdle}">
     <div class="overlay"></div>
     <sprite spriteId="touch"
       :spriteSrc="require('../assets/touch.png')"
@@ -12,9 +12,7 @@
 
 <script>
 'use strict'
-
 import Sprite from './Sprite'
-
 export default {
   components: {
     Sprite
@@ -35,7 +33,6 @@ export default {
   width: 100vw;
   height: 100vh;
   z-index: 8888;
-
   pointer-events: none;
   display: none;
 }
@@ -48,7 +45,6 @@ export default {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-
   height: 10px;
   width: 180px;
   z-index: 9999;
@@ -59,7 +55,6 @@ export default {
   height: 100%;
   position: absolute;
   z-index: 8888;
-
   background: #000;
   opacity: 0;
   /*-webkit-animation: SlowMo 5s cubic-bezier(0.77, 0, 0.175, 1) infinite;*/
